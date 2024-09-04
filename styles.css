@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: 'Garamond', serif;
+    background-color: #f4f1e9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.book {
+    width: 70%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #d3b896;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cover {
+    text-align: center;
+    padding: 20px;
+}
+
+.cover h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #8b5e3c;
+}
+
+.cover button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #8b5e3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cover button:hover {
+    background-color: #6f4f28;
+}
+
+.search-container {
+    display: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 1em;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #d3b896;
+    border-radius: 5px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #8b5e3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-container button:hover {
+    background-color: #6f4f28;
+}
+
+.pages {
+    display: none;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid #d3b896;
+}
+
+.page h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.page p {
+    font-size: 1.2em;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #8b5e3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.controls button:hover {
+    background-color: #6f4f28;
+}

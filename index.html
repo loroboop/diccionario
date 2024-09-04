@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario de Términos Antiguos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="book">
+        <!-- Portada -->
+        <div class="cover">
+            <h1>Diccionario de Términos Antiguos</h1>
+            <button onclick="openBook()">Abrir Diccionario</button>
+        </div>
+
+        <!-- Buscador -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar término..." onkeyup="searchTerm()">
+            <button onclick="clearSearch()">Limpiar Búsqueda</button>
+        </div>
+
+        <!-- Páginas del diccionario -->
+        <div class="pages">
+            <!-- Página 1 -->
+            <div class="page">
+                <h2>Abuso de menores</h2>
+                <p>Acciones que causan daño físico, emocional o sexual a una persona menor de edad.</p>
+                <h2>Acción afirmativa</h2>
+                <p>Medidas para compensar la discriminación pasada y promover la igualdad de oportunidades.</p>
+            </div>
+
+            <!-- Página 2 -->
+            <div class="page">
+                <h2>Acoso</h2>
+                <p>Conducta agresiva e intimidatoria hacia otra persona de manera repetida.</p>
+                <h2>Acoso laboral</h2>
+                <p>Formas de maltrato o intimidación en el entorno de trabajo.</p>
+            </div>
+
+            <!-- Página 3 -->
+            <div class="page">
+                <h2>Acoso moral</h2>
+                <p>Daño psicológico intencional a través de insultos, humillaciones y vejaciones.</p>
+                <h2>Acoso sexual</h2>
+                <p>Conducta de naturaleza sexual no deseada que afecta la dignidad de la persona.</p>
+            </div>
+
+            <!-- Página 4 -->
+            <div class="page">
+                <h2>Adecuación de los derechos Internacionales a la norma nacional.</h2>
+                <p>Proceso de adaptar las leyes internacionales a la legislación interna de un país.</p>
+                <h2>Adolescentes</h2>
+                <p>Personas que están en la etapa de la vida entre la niñez y la adultez, generalmente entre 12 y 18 años.</p>
+            </div>
+
+            <!-- Página 5 -->
+            <div class="page">
+                <h2>Adultos Mayores</h2>
+                <p>Personas de avanzada edad que suelen requerir cuidados y consideraciones especiales.</p>
+                <h2>Antisemitismo</h2>
+                <p>Hostilidad, prejuicio o discriminación contra los judíos.</p>
+            </div>
+
+            <!-- Página 6 -->
+            <div class="page">
+                <h2>Asimilación</h2>
+                <p>Proceso mediante el cual un grupo minoritario adopta las costumbres y actitudes de la cultura dominante.</p>
+                <h2>Bienes culturales y mundialización</h2>
+                <p>Impacto de la globalización en la preservación y difusión de los bienes culturales.</p>
+            </div>
+
+            <!-- Página 7 -->
+            <div class="page">
+                <h2>Bienestar</h2>
+                <p>Estado de satisfacción y tranquilidad en el que se encuentran las personas cuando tienen sus necesidades básicas cubiertas.</p>
+                <h2>Buen gobierno</h2>
+                <p>Prácticas y procesos que buscan una administración pública ética, eficiente y orientada al bien común.</p>
+            </div>
+
+            <!-- Página 8 -->
+            <div class="page">
+                <h2>Calidad de vida</h2>
+                <p>Nivel de bienestar y satisfacción que una persona o grupo social percibe.</p>
+                <h2>Capabilities</h2>
+                <p>Enfoque que se centra en las capacidades y libertades reales que tienen las personas para hacer elecciones.</p>
+            </div>
+
+            <!-- Página 9 -->
+            <div class="page">
+                <h2>Coadyuvancia</h2>
+                <p>Colaboración en un proceso legal en apoyo a una de las partes.</p>
+                <h2>Cohesión social</h2>
+                <p>Grado en que los miembros de una sociedad comparten una identidad común y cooperan para el bienestar general.</p>
+            </div>
+
+            <!-- Página 10 -->
+            <div class="page">
+                <h2>Comisión de Derechos Humanos</h2>
+                <p>Organismo encargado de promover y proteger los derechos humanos a nivel nacional o internacional.</p>
+                <h2>Comunidad de sordos</h2>
+                <p>Grupo social que comparte una lengua de señas y una identidad cultural común.</p>
+            </div>
+
+            <!-- Página 11 -->
+            <div class="page">
+                <h2>Comunitarismo</h2>
+                <p>Doctrina que subraya la importancia de la comunidad en la formación de la identidad individual.</p>
+                <h2>Conducta discriminatoria</h2>
+                <p>Comportamiento que trata a las personas de manera injusta debido a su raza, género, religión, etc.</p>
+            </div>
+
+            <!-- Página 12 -->
+            <div class="page">
+                <h2>Constitucionalismo</h2>
+                <p>Principio según el cual el poder político debe estar limitado por una constitución.</p>
+                <h2>Cultura democrática</h2>
+                <p>Conjunto de valores y prácticas que promueven la participación ciudadana y el respeto a los derechos humanos.</p>
+            </div>
+
+            <!-- Página 13 -->
+            <div class="page">
+                <h2>Cultura política</h2>
+                <p>Conjunto de actitudes, creencias y valores que influyen en el comportamiento político de los individuos.</p>
+                <h2>Defecto al nacimiento</h2>
+                <p>Anomalía o malformación presente desde el nacimiento, ya sea física o mental.</p>
+            </div>
+
+            <!-- Página 14 -->
+            <div class="page">
+                <h2>Defensoría</h2>
+                <p>Institución encargada de proteger los derechos y libertades de las personas.</p>
+                <h2>Derecho a la libre determinación</h2>
+                <p>Derecho de los pueblos a decidir su forma de gobierno y su desarrollo económico y social.</p>
+            </div>
+
+            <!-- Página 15 -->
+            <div class="page">
+                <h2>Derecho a la no discriminación</h2>
+                <p>Principio según el cual todas las personas deben ser tratadas con igualdad, sin distinción alguna.</p>
+                <h2>Derechos civiles y políticos</h2>
+                <p>Derechos que protegen las libertades individuales y la participación en el gobierno.</p>
+            </div>
+
+            <!-- Página 16 -->
+            <div class="page">
+                <h2>Derechos humanos y fundamentales</h2>
+                <p>Derechos inherentes a todas las personas, que deben ser respetados y garantizados.</p>
+                <h2>Derechos sexuales y reproductivos</h2>
+                <p>Derechos relacionados con la salud sexual y reproductiva, y la capacidad de tomar decisiones en estos aspectos.</p>
+            </div>
+
+            <!-- Página 17 -->
+            <div class="page">
+                <h2>Desigualdad sexual institucional</h2>
+                <p>Desigualdad y discriminación basada en el género en las instituciones y políticas.</p>
+                <h2>Discapacidad</h2>
+                <p>Condición que limita la capacidad de una persona para realizar actividades normales debido a deficiencias físicas o mentales.</p>
+            </div>
+
+            <!-- Página 18 -->
+            <div class="page">
+                <h2>Discriminación</h2>
+                <p>Tratamiento desigual o injusto hacia personas debido a características personales.</p>
+                <h2>Discriminación por origen étnico o racial</h2>
+                <p>Actos de discriminación basados en la raza o etnicidad de una persona.</p>
+            </div>
+
+            <!-- Página 19 -->
+            <div class="page">
+                <h2>Diversidad</h2>
+                <p>Variedad de características y experiencias en una población.</p>
+                <h2>Educación especial</h2>
+                <p>Educación diseñada para atender las necesidades de estudiantes con discapacidades.</p>
+            </div>
+
+            <!-- Página 20 -->
+            <div class="page">
+                <h2>Equidad</h2>
+                <p>Principio de justicia que busca dar a cada persona lo
+                    <h2>Equidad</h2>
+                    <p>Principio de justicia que busca dar a cada persona lo que necesita para tener igualdad de oportunidades.</p>
+                    <h2>Estereotipo</h2>
+                    <p>Creencia generalizada y simplificada sobre un grupo de personas.</p>
+                </div>
+    
+                <!-- Página 21 -->
+                <div class="page">
+                    <h2>Estigma</h2>
+                    <p>Marca social negativa que se asocia con ciertas características o condiciones.</p>
+                    <h2>Etnicismo</h2>
+                    <p>Creencia en la superioridad de una etnicidad sobre otra.</p>
+                </div>
+    
+                <!-- Página 22 -->
+                <div class="page">
+                    <h2>Etnocentrismo</h2>
+                    <p>Evaluación de otras culturas según los estándares de la propia cultura.</p>
+                    <h2>Exclusión</h2>
+                    <p>Proceso de marginación o aislamiento de ciertos grupos o individuos de una comunidad.</p>
+                </div>
+    
+                <!-- Página 23 -->
+                <div class="page">
+                    <h2>Feminicidio</h2>
+                    <p>Asesinato de mujeres debido a su género.</p>
+                    <h2>Feminismo</h2>
+                    <p>Movimiento que busca la igualdad de derechos entre mujeres y hombres.</p>
+                </div>
+    
+                <!-- Página 24 -->
+                <div class="page">
+                    <h2>Género</h2>
+                    <p>Concepto que distingue entre las identidades masculinas, femeninas y no binarias en relación a la sociedad.</p>
+                    <h2>Grado de discapacidad</h2>
+                    <p>Medida del impacto de una discapacidad en la vida diaria de una persona.</p>
+                </div>
+    
+                <!-- Página 25 -->
+                <div class="page">
+                    <h2>Heterofilia</h2>
+                    <p>Apreciación o preferencia por las personas del sexo opuesto.</p>
+                    <h2>Homofobia</h2>
+                    <p>Temor o aversión hacia las personas homosexuales.</p>
+                </div>
+    
+                <!-- Página 26 -->
+                <div class="page">
+                    <h2>Identidad</h2>
+                    <p>Conjunto de características que definen a una persona o grupo.</p>
+                    <h2>Igualdad</h2>
+                    <p>Principio de tratar a todas las personas con el mismo respeto y justicia.</p>
+                </div>
+    
+                <!-- Página 27 -->
+                <div class="page">
+                    <h2>Impedido</h2>
+                    <p>Persona que tiene limitaciones físicas o mentales significativas.</p>
+                    <h2>Inclusión</h2>
+                    <p>Práctica de integrar a personas con diversas características en la sociedad.</p>
+                </div>
+    
+                <!-- Página 28 -->
+                <div class="page">
+                    <h2>Integración social</h2>
+                    <p>Proceso de hacer que todos los individuos participen plenamente en la vida social.</p>
+                    <h2>Intolerancia</h2>
+                    <p>Falta de aceptación hacia las diferencias en otros.</p>
+                </div>
+    
+                <!-- Página 29 -->
+                <div class="page">
+                    <h2>Invalidez</h2>
+                    <p>Condición de una persona que no puede realizar ciertas actividades debido a una discapacidad.</p>
+                    <h2>Libertad de expresión</h2>
+                    <p>Derecho a expresar ideas y opiniones sin censura o represalias.</p>
+                </div>
+    
+                <!-- Página 30 -->
+                <div class="page">
+                    <h2>Machismo</h2>
+                    <p>Creencia en la superioridad de los hombres sobre las mujeres.</p>
+                    <h2>Malformación</h2>
+                    <p>Anomalía en el desarrollo de una parte del cuerpo o de un órgano.</p>
+                </div>
+    
+                <!-- Página 31 -->
+                <div class="page">
+                    <h2>Maltrato</h2>
+                    <p>Trato cruel o dañino hacia una persona o animal.</p>
+                    <h2>Marginación</h2>
+                    <p>Proceso de excluir a individuos o grupos de la participación plena en la sociedad.</p>
+                </div>
+    
+                <!-- Página 32 -->
+                <div class="page">
+                    <h2>Minoría</h2>
+                    <p>Grupo que representa una parte menor de una población.</p>
+                    <h2>Misoginia</h2>
+                    <p>Actitud o comportamiento que muestra odio o desprecio hacia las mujeres.</p>
+                </div>
+    
+                <!-- Página 33 -->
+                <div class="page">
+                    <h2>Mixofobia</h2>
+                    <p>Temor o aversión hacia los grupos de personas que mezclan diferentes razas o culturas.</p>
+                    <h2>Outcoming</h2>
+                    <p>Resultado o consecuencia de una acción o proceso.</p>
+                </div>
+    
+                <!-- Página 34 -->
+                <div class="page">
+                    <h2>Perspectiva de género</h2>
+                    <p>Enfoque que considera cómo el género afecta a la experiencia y a las oportunidades de las personas.</p>
+                    <h2>Pobreza</h2>
+                    <p>Condición de no tener suficiente dinero o recursos para satisfacer las necesidades básicas.</p>
+                </div>
+    
+                <!-- Página 35 -->
+                <div class="page">
+                    <h2>Prejuicio</h2>
+                    <p>Opinión formada sin conocer completamente a una persona o grupo, generalmente negativa.</p>
+                    <h2>Racismo</h2>
+                    <p>Creencia en la superioridad de una raza sobre otras, que resulta en discriminación.</p>
+                </div>
+    
+                <!-- Página 36 -->
+                <div class="page">
+                    <h2>Responsabilidad social empresarial</h2>
+                    <p>Compromiso de las empresas con prácticas que beneficien a la sociedad y el medio ambiente.</p>
+                    <h2>Tolerancia</h2>
+                    <p>Respeto y aceptación de las diferencias en las personas.</p>
+                </div>
+    
+                <!-- Página 37 -->
+                <div class="page">
+                    <h2>Tutela</h2>
+                    <p>Protección legal brindada a personas que no pueden protegerse por sí mismas.</p>
+                    <h2>Victimización</h2>
+                    <p>Proceso por el cual una persona es convertida en víctima de una situación o conducta injusta.</p>
+                </div>
+    
+                <!-- Página 38 -->
+                <div class="page">
+                    <h2>Vulnerabilidad</h2>
+                    <p>Estado de estar expuesto a la posibilidad de daño o perjuicio.</p>
+                    <h2>Xenofobia</h2>
+                    <p>Temor o aversión hacia personas de otros países o culturas.</p>
+                </div>
+            </div>
+    
+            <!-- Controles de navegación -->
+            <div class="controls">
+                <button onclick="prevPage()">Anterior</button>
+                <button onclick="nextPage()">Siguiente</button>
+            </div>
+        </div>
+    
+        <script src="script.js"></script>
+    </body>
+    </html>
+    
